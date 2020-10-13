@@ -13,7 +13,9 @@ public class RandomNumbers {
         int[] array = new int[n];
         int a = (int)((Math.random() * 10));
         array[0] = a;
-        for(int i = 1; i < n; i++){
+        a = (int)((Math.random() * 100));
+        array[1] = a;
+        for(int i = 2; i < n; i++){
             a = (int)((Math.random() * 1000));
             if(array[i - 1] < a){
                 array[i] = a;
